@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3 uid="uid://bjjq0b1ieeobu"]
+
+[ext_resource type="PackedScene" uid="uid://bnb1bmas3fn2r" path="res://player/player_2.tscn" id="2_jhgvh"]
+[ext_resource type="PackedScene" uid="uid://beon8ocey1cy8" path="res://scenes/map.tscn" id="2_md74t"]
+[ext_resource type="Script" path="res://player/player_2.gd" id="3_qa3oc"]
+[ext_resource type="PackedScene" uid="uid://be7dui6hkhsaa" path="res://moster/slime.tscn" id="4_ummyn"]
+[ext_resource type="Script" path="res://moster/slime.gd" id="5_d7ejb"]
+
+[node name="World" type="Node2D"]
+y_sort_enabled = true
+
+[node name="map" parent="." instance=ExtResource("2_md74t")]
+
+[node name="Player2" parent="map" instance=ExtResource("2_jhgvh")]
+position = Vector2(317, 207)
+script = ExtResource("3_qa3oc")
+
+[node name="Slime" parent="map" instance=ExtResource("4_ummyn")]
+y_sort_enabled = true
+position = Vector2(250, 186)
+script = ExtResource("5_d7ejb")

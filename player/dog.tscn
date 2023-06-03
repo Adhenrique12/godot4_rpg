@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://oklwe1btxi5v"]
+
+[ext_resource type="Texture2D" uid="uid://uj6vb2kqy8on" path="res://Assets/animal/Dog01.png" id="1_easgf"]
+
+[node name="dog" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_easgf")
+hframes = 5
+vframes = 2
